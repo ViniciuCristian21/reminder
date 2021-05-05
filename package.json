@@ -1,0 +1,12 @@
+{
+  "name": "devDesktop",
+  "version": "1.0.0",
+  "description": "- [x] Electron\r - [x] Javascript\r - [x] HTML\r - [x] CSS\r - [x] Fonte (inter)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

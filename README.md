@@ -16,7 +16,7 @@
 - [x] Setinterval e clearInterval do JS
 - [x] Template literals do JS
 - [x] padStart
-- [x] Math.flor
+- [x] Math.floor
 
 # Timer temporizador com JS
 - [x] Cauculos de minutos e segundos
