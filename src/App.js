@@ -17,7 +17,7 @@ const App = {
             Emitter.on('countdown-start', notify);
 
             Emitter.on('countdown-end', () => {
-                // Timer.init();
+                Timer.init();
             });
 
             Timer.init();
