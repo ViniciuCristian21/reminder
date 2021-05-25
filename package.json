@@ -2,9 +2,10 @@
   "name": "devDesktop",
   "version": "1.0.0",
   "description": "- [x] Electron\r - [x] Javascript\r - [x] HTML\r - [x] CSS\r - [x] Fonte (inter)",
-  "main": "main.js",
+  "main": "electron/main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "npx electron-packager . --icon assets/instagram.icns --out=packages"
   },
   "keywords": [],
   "author": "",

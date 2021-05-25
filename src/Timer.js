@@ -2,7 +2,7 @@ import { View } from './View.js';
 import { Notfiyer } from './Notifyer.js';
 import { Emitter } from './Emitter.js';
 const Timer = {
-    time: 0.1 * 60,
+    time: 25 * 60,
     currentTime: 0,
     interval: null,
     timeToMinutes: time => Math.floor(time / 60 ),

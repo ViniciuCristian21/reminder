@@ -1,0 +1,28 @@
+const { app } = require('electron')
+const ControlWindow = require('./ControlWindow.js')
+
+
+function App(){
+  const win = require('./CreateWindow.js')
+  const tray = require('./Tray.js')
+  const { toggle } = ControlWindow(win, tray)
+  win.on('blur', win.hide)
+
+
+  tray.on('click', toggle)
+}
+
+app.whenReady().then(() => {
+  App()
+})
+
+app.on('window-all-closed', () => {
+  if (process.platform !== 'darwin') {
+    app.quit()
+  }
+})
+
+if (process.platform === 'darwin') {
+  app.dock.hide()
+}
+// app.dock.hide()
